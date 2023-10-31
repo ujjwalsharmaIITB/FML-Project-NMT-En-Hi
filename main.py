@@ -61,7 +61,7 @@ app = Flask(__name__)
 
 
 @app.get("/getTranslation/v1/<sentence>")
-def returnPartOfSpeechTag(sentence):
+def returnV1Translation(sentence):
     print(sentence)
     transation = evaluateInputSentence(sentence , version=1)
     return jsonify({
@@ -72,7 +72,7 @@ def returnPartOfSpeechTag(sentence):
 
 
 @app.get("/getTranslation/v2/<sentence>")
-def returnPartOfSpeechTag(sentence):
+def returnV2Translation(sentence):
     print(sentence)
     transation = evaluateInputSentence(sentence , version = 2)
     return jsonify({

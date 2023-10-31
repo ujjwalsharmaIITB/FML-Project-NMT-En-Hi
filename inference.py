@@ -253,3 +253,29 @@ def evaluateInputSentence(sentence , version=1):
     
 
 
+def randomEncDecHelper(encoder , decoder , input_lang , output_lang , pairs , n = 10):
+    returnList = []
+    for i in range(n):
+        pair = random.choice(pairs)
+        intermediateDict = {}
+        print('Input Sentence :: ', pair[0])
+        print('Actual Translated Sentence :: ', pair[1])
+        intermediateDict['Input Sentence'] = pair[0]
+        intermediateDict['Actual Translated Sentence'] = pair[1]
+        output_words, _ = evaluate(encoder, decoder, pair[0], input_lang, output_lang)
+        output_sentence = ' '.join(output_words)
+        print('Translated Sentence :: ', output_sentence)
+        intermediateDict['Translated Sentence'] = output_sentence
+
+        returnList.append(intermediateDict)
+        print('')
+    return returnList
+
+
+def randomEncDecV1(n = 10):
+    return randomEncDecHelper(encoder , decoder , input_lang , output_lang , pairs , n)
+
+
+
+def randomEncDecV2(n = 10):
+    return randomEncDecHelper(encoderAttn , decoderAttn , input_lang , output_lang , pairs , n)

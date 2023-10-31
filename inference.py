@@ -204,6 +204,8 @@ def evaluateRandomly(encoder, decoder,  pairs , input_lang, output_lang, n=10):
 
 def evaluateInputSentenceHelper(encoder, decoder,  inputSentence , input_lang, output_lang,):
     print('Input Sentence :: ', inputSentence)
+    inputSentence = normalizeString(inputSentence)
+    print("Normalized input :: " , inputSentence)
     output_words, _ = evaluate(encoder, decoder, inputSentence, input_lang, output_lang)
     output_sentence = ' '.join(output_words)
     print('Translated Sentence :: ', output_sentence)

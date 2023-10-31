@@ -80,6 +80,19 @@ def returnV2Translation(sentence):
         'Translated Sentence' : transation
     })
 
+
+
+@app.get("/getRandomTranslationsV1/<n>")
+def returnRandomV1Translation(n):
+    n = int(n)
+    return randomEncDecV1(n)
+
+
+@app.get("/getRandomTranslationsV2/<n>")
+def returnRandomV2Translation(n):
+    n = int(n)
+    return randomEncDecV2(n)
+
 # evaluateRandomly(encoder , decoder ,pairs , input_lang , output_lang)
 
 

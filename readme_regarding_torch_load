@@ -1,0 +1,30 @@
+***
+
+When you have Classifier defined directly in a file you run,
+it's pickled as coming from the module main. When you unpickle it in the web app,
+there is no main module, so the code can't find the definition.
+If you create the classifier in it's own module that you import in both places, then it should work.
+
+https://www.pythonanywhere.com/forums/topic/12738/
+***
+
+
+Now if you want to unpickle then you need to make the class that have the definations as
+part of __main__ 
+to do this you need to point and not defile the same classes in the main file
+
+you can see this in encoder_decoder.py code
+
+
+***
+
+https://www.reddit.com/r/flask/comments/yfbkks/getting_cant_get_attribute_getimages_on_module/
+had to add the following:
+
+import __main__
+
+def getImages(d): return##
+
+__main__.getImages = getImages
+
+***

@@ -1,0 +1,175 @@
+1m 31s (- 151m 30s) (1 1%) 2.6717
+3m 2s (- 148m 58s) (2 2%) 2.2122
+4m 33s (- 147m 13s) (3 3%) 1.9933
+6m 3s (- 145m 31s) (4 4%) 1.8177
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-4-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-4-epoch.pt
+7m 34s (- 143m 59s) (5 5%) 1.6694
+9m 5s (- 142m 23s) (6 6%) 1.5411
+10m 35s (- 140m 48s) (7 7%) 1.4299
+12m 6s (- 139m 14s) (8 8%) 1.3310
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-8-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-8-epoch.pt
+13m 37s (- 137m 41s) (9 9%) 1.2452
+15m 7s (- 136m 8s) (10 10%) 1.1693
+16m 38s (- 134m 36s) (11 11%) 1.1024
+18m 8s (- 133m 3s) (12 12%) 1.0437
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-12-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-12-epoch.pt
+19m 39s (- 131m 32s) (13 13%) 0.9930
+21m 9s (- 130m 1s) (14 14%) 0.9470
+22m 40s (- 128m 29s) (15 15%) 0.9064
+24m 10s (- 126m 56s) (16 16%) 0.8704
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-16-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-16-epoch.pt
+25m 41s (- 125m 27s) (17 17%) 0.8376
+27m 12s (- 123m 55s) (18 18%) 0.8080
+28m 42s (- 122m 24s) (19 19%) 0.7818
+30m 13s (- 120m 53s) (20 20%) 0.7570
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-20-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-20-epoch.pt
+31m 44s (- 119m 24s) (21 21%) 0.7337
+33m 15s (- 117m 55s) (22 22%) 0.7129
+34m 46s (- 116m 23s) (23 23%) 0.6924
+36m 16s (- 114m 53s) (24 24%) 0.6743
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-24-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-24-epoch.pt
+37m 47s (- 113m 23s) (25 25%) 0.6564
+39m 17s (- 111m 51s) (26 26%) 0.6405
+40m 48s (- 110m 20s) (27 27%) 0.6244
+42m 19s (- 108m 49s) (28 28%) 0.6098
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-28-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-28-epoch.pt
+43m 49s (- 107m 17s) (29 28%) 0.5962
+45m 19s (- 105m 46s) (30 30%) 0.5829
+46m 50s (- 104m 15s) (31 31%) 0.5702
+48m 20s (- 102m 44s) (32 32%) 0.5580
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-32-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-32-epoch.pt
+49m 51s (- 101m 12s) (33 33%) 0.5458
+51m 21s (- 99m 41s) (34 34%) 0.5352
+52m 51s (- 98m 10s) (35 35%) 0.5252
+54m 21s (- 96m 38s) (36 36%) 0.5148
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-36-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-36-epoch.pt
+55m 52s (- 95m 7s) (37 37%) 0.5047
+57m 22s (- 93m 36s) (38 38%) 0.4954
+58m 52s (- 92m 5s) (39 39%) 0.4864
+60m 23s (- 90m 34s) (40 40%) 0.4774
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-40-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-40-epoch.pt
+61m 53s (- 89m 4s) (41 41%) 0.4694
+63m 23s (- 87m 33s) (42 42%) 0.4610
+64m 54s (- 86m 2s) (43 43%) 0.4528
+66m 24s (- 84m 31s) (44 44%) 0.4457
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-44-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-44-epoch.pt
+67m 54s (- 83m 0s) (45 45%) 0.4380
+69m 25s (- 81m 29s) (46 46%) 0.4322
+70m 55s (- 79m 58s) (47 47%) 0.4245
+72m 25s (- 78m 27s) (48 48%) 0.4174
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-48-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-48-epoch.pt
+73m 56s (- 76m 57s) (49 49%) 0.4119
+75m 26s (- 75m 26s) (50 50%) 0.4061
+76m 56s (- 73m 55s) (51 51%) 0.3988
+78m 26s (- 72m 24s) (52 52%) 0.3931
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-52-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-52-epoch.pt
+79m 56s (- 70m 53s) (53 53%) 0.3879
+81m 27s (- 69m 23s) (54 54%) 0.3826
+82m 57s (- 67m 52s) (55 55%) 0.3769
+84m 26s (- 66m 20s) (56 56%) 0.3724
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-56-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-56-epoch.pt
+85m 56s (- 64m 50s) (57 56%) 0.3668
+87m 27s (- 63m 19s) (58 57%) 0.3620
+88m 56s (- 61m 48s) (59 59%) 0.3572
+90m 26s (- 60m 17s) (60 60%) 0.3529
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-60-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-60-epoch.pt
+91m 56s (- 58m 46s) (61 61%) 0.3472
+93m 26s (- 57m 16s) (62 62%) 0.3431
+94m 56s (- 55m 45s) (63 63%) 0.3402
+96m 27s (- 54m 15s) (64 64%) 0.3348
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-64-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-64-epoch.pt
+97m 58s (- 52m 45s) (65 65%) 0.3310
+99m 28s (- 51m 14s) (66 66%) 0.3270
+100m 58s (- 49m 43s) (67 67%) 0.3233
+102m 28s (- 48m 13s) (68 68%) 0.3192
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-68-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-68-epoch.pt
+103m 59s (- 46m 43s) (69 69%) 0.3159
+105m 29s (- 45m 12s) (70 70%) 0.3117
+106m 59s (- 43m 41s) (71 71%) 0.3087
+108m 29s (- 42m 11s) (72 72%) 0.3047
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-72-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-72-epoch.pt
+109m 58s (- 40m 40s) (73 73%) 0.3009
+111m 28s (- 39m 9s) (74 74%) 0.2981
+112m 58s (- 37m 39s) (75 75%) 0.2952
+114m 28s (- 36m 8s) (76 76%) 0.2922
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-76-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-76-epoch.pt
+115m 58s (- 34m 38s) (77 77%) 0.2895
+117m 29s (- 33m 8s) (78 78%) 0.2856
+118m 59s (- 31m 37s) (79 79%) 0.2831
+120m 30s (- 30m 7s) (80 80%) 0.2807
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-80-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-80-epoch.pt
+122m 1s (- 28m 37s) (81 81%) 0.2778
+123m 31s (- 27m 6s) (82 82%) 0.2745
+125m 2s (- 25m 36s) (83 83%) 0.2723
+126m 32s (- 24m 6s) (84 84%) 0.2688
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-84-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-84-epoch.pt
+128m 3s (- 22m 35s) (85 85%) 0.2662
+129m 33s (- 21m 5s) (86 86%) 0.2639
+131m 3s (- 19m 35s) (87 87%) 0.2620
+132m 33s (- 18m 4s) (88 88%) 0.2594
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-88-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-88-epoch.pt
+134m 4s (- 16m 34s) (89 89%) 0.2570
+135m 33s (- 15m 3s) (90 90%) 0.2540
+137m 3s (- 13m 33s) (91 91%) 0.2524
+138m 33s (- 12m 2s) (92 92%) 0.2498
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-92-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-92-epoch.pt
+140m 2s (- 10m 32s) (93 93%) 0.2471
+141m 32s (- 9m 2s) (94 94%) 0.2460
+143m 2s (- 7m 31s) (95 95%) 0.2434
+144m 32s (- 6m 1s) (96 96%) 0.2414
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-96-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-96-epoch.pt
+146m 1s (- 4m 30s) (97 97%) 0.2397
+147m 31s (- 3m 0s) (98 98%) 0.2365
+149m 1s (- 1m 30s) (99 99%) 0.2349
+150m 30s (- 0m 0s) (100 100%) 0.2330
+Saving ...
+Saved Encoder at  encoderHindi-iitb-with-attn-100k-gru-data-nonrev-100-epoch.pt
+Saved Decoder at decoderHindi-iitb-with-attn-100k-gru-data-nonrev-100-epoch.pt

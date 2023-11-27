@@ -23,12 +23,15 @@ from encoder_decoder import *
 
 from transformer import *
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_file
 
 
 
 
-
+# app = Flask(__name__,
+#             static_url_path='/', 
+#             static_folder='static',
+#             template_folder='templates')
 
 
 app = Flask(__name__)
@@ -54,11 +57,9 @@ app = Flask(__name__)
 
 
 
-
-
-# @app.get("/")
-# def returnHomePage():
-#     return render_template("index.html")
+@app.get("/")
+def returnHomePage():
+    return render_template("index.html")
 
 
 
@@ -97,11 +98,25 @@ def returnRandomV2Translation(n):
 
 
 
+
+@app.get("/getTransformerV1/<sentence>")
+def getTranslationFromTransformerV1(sentence):
+    # model = loadTransformerModel("saved/transformer-model-200k.pt")
+    # model.device = device
+    # translated =  generate_translation_from_english(model , sentence , device)
+    return jsonify({
+        'Actual Sentence' : sentence,
+        'Translated Sentence' : ""
+    })
+
+
+
+
 @app.get("/getTransformerV2/<sentence>")
 def getTranslationFromTransformerV2(sentence):
     model = loadTransformerModel("saved/transformer-model-200k.pt")
     model.device = device
-    translated =  generate_translation_from_english(model , sentence , device)
+    translated =  generate_translation_from_english(model , sentence , device , eng_vocab_v2 ,hindi_vocab_v2)
     return jsonify({
         'Actual Sentence' : sentence,
         'Translated Sentence' : translated
@@ -113,29 +128,22 @@ def getTranslationFromTransformerV2(sentence):
 def getTranslationFromTransformerV3(sentence):
     model = loadTransformerModel("saved/model-250k.pt")
     model.device = device
-    translated =  generate_translation_from_english(model , sentence , device)
+    translated =  generate_translation_from_english(model , sentence , device, eng_vocab_v3 ,hindi_vocab_v3 )
     return jsonify({
         'Actual Sentence' : sentence,
         'Translated Sentence' : translated
     })
     
 
-# evaluateRandomly(encoder , decoder ,pairs , input_lang , output_lang)
+@app.get("/getTransformerV4/<sentence>")
+def getTranslationFromTransformerV4(sentence):
+    model = loadTransformerModel("saved/model-300k.pt")
+    model.device = device
+    translated =  generate_translation_from_english(model , sentence , device , eng_vocab_v4 , hindi_vocab_v4)
+    return jsonify({
+        'Actual Sentence' : sentence,
+        'Translated Sentence' : translated
+    })
 
-
-
-
-
-
-
-
-
-
-# def infer(encoder , decoder , pairs , input_lang , output_lang):
-#     evaluateRandomly(encoder ,  decoder , pairs , input_lang , output_lang )
-    
-
-
-
-# infer(encoder , decoder , pairs , input_lang , output_lang)
-
+if __name__ == "__main__":
+    app.run()

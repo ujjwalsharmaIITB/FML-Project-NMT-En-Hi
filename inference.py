@@ -380,7 +380,7 @@ def preprocess(sentence):
 
 
 
-def clean_the_data(path):
+def clean_the_data(path , hindi_vocab , english_vocab):
     '''
       This function will load the data and process it line by line.
       It will apply all the preprocessing and make the data ready for further processing.
@@ -431,11 +431,31 @@ def clean_the_data(path):
 
 
 
-train_file_path = "data/eng-hin-train-200000.txt"
-pairs=clean_the_data(train_file_path)
 
-print(len(pairs))
+hindi_vocab_v2= Vocab_builder()
+eng_vocab_v2 = Vocab_builder()
 
+train_file_path_v2 = "data/eng-hin-train-200000.txt"
+pairs_v2=clean_the_data(train_file_path_v2 , hindi_vocab_v2 , eng_vocab_v2)
+print(len(pairs_v2))
+
+#  code for 250k
+
+hindi_vocab_v3= Vocab_builder()
+eng_vocab_v3 = Vocab_builder()
+
+train_file_path_v3 = "data/eng-hin-train-250000.txt"
+pairs_v3=clean_the_data(train_file_path_v3 , hindi_vocab_v3 , eng_vocab_v3)
+print(len(pairs_v3))
+
+#  code for 300k
+
+hindi_vocab_v4= Vocab_builder()
+eng_vocab_v4 = Vocab_builder()
+
+train_file_path_v4 = "data/eng-hin-train-300000.txt"
+pairs_v4=clean_the_data(train_file_path_v4 , hindi_vocab_v4 , eng_vocab_v4)
+print(len(pairs_v4))
 
 
 def clean_sentence(sentence):
@@ -449,7 +469,7 @@ def clean_sentence(sentence):
             cleaned+=letter
     return cleaned
 
-def predict_translation(model,sentence,device,max_length=MAX_LENGTH):
+def predict_translation(model,sentence,device, english_vocab , hindi_vocab ,max_length=MAX_LENGTH):
     '''
       function will return the translation predicted by the trained model for each sentence
     '''
@@ -495,9 +515,9 @@ def generateEnglishSentence(sentence):
     return " ".join(cleanedSentence)
 
 
-def generate_translation_from_english(model , sentence , device):
+def generate_translation_from_english(model , sentence , device , english_vocab , hindi_vocab):
   sentence = generateEnglishSentence(sentence)
-  return predict_translation(model , sentence , device)
+  return predict_translation(model , sentence , device , english_vocab , hindi_vocab)
 
 
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English To Hindi Transalator</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">English To Hindi Transalator - CS725 Project</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="inputSentence">Enter Sentence in English :</label>
+                    <input type="text" class="form-control" id="inputSentence" placeholder="Enter a Sentence in English">
+                </div>
+                <div class="form-group">
+                    <label for="modelSelect">Select a Model:</label>
+                    <select class="form-control" id="modelSelect">
+                        <option value="encdecV1">Encoder-Decoder</option>
+                        <option value="encdecV2">Encoder-Decoder (With Attention)</option>
+                        <!-- <option value="transformerV1">Transformer (With 65k sentences)</option> -->
+                        <option value="transformerV2">Transformer (With 135k sentences)</option>
+                        <option value="transformerV3">Transformer (With 169k sentences )</option>
+                        <option value="transformerV4">Transformer (With 200k sentences )</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block" id="predictButton">Translate</button>
+                <div class="mt-3" id="predictionResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

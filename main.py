@@ -21,6 +21,8 @@ from inference import *
 
 from encoder_decoder import *
 
+from transformer import *
+
 from flask import Flask, request, jsonify, render_template
 
 
@@ -92,6 +94,31 @@ def returnRandomV1Translation(n):
 def returnRandomV2Translation(n):
     n = int(n)
     return randomEncDecV2(n)
+
+
+
+@app.get("/getTransformerV2/<sentence>")
+def getTranslationFromTransformerV2(sentence):
+    model = loadTransformerModel("saved/transformer-model-200k.pt")
+    model.device = device
+    translated =  generate_translation_from_english(model , sentence , device)
+    return jsonify({
+        'Actual Sentence' : sentence,
+        'Translated Sentence' : translated
+    })
+
+
+
+@app.get("/getTransformerV3/<sentence>")
+def getTranslationFromTransformerV3(sentence):
+    model = loadTransformerModel("saved/model-250k.pt")
+    model.device = device
+    translated =  generate_translation_from_english(model , sentence , device)
+    return jsonify({
+        'Actual Sentence' : sentence,
+        'Translated Sentence' : translated
+    })
+    
 
 # evaluateRandomly(encoder , decoder ,pairs , input_lang , output_lang)
 
